@@ -48,5 +48,4 @@ Thumbs.db
 *.mov
 *.wmv
 
-/HelpApi/.vs/HelpApi/FileContentIndex
-/.vs
+*/.vs/*
