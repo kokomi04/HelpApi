@@ -1,4 +1,5 @@
-﻿using HelpApi.Models;
+﻿using HelpApi.Controllers.BaseController;
+using HelpApi.Models;
 using HelpApi.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -6,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HelpApi.Controllers
 {
     [Route("api/guides")]
-    [ApiController]
-    public class GuideController : ControllerBase
+    public class GuideController : HelpBaseController
     {
         private readonly IGuideService _guideService;
 

@@ -16,36 +16,41 @@ namespace HelpApi.EF
             : base(options)
         {
         }
+        //public virtual DbSet<Role> Role { get; set; }
+       // public virtual DbSet<RoleDataPermission> RoleDataPermission { get; set; }
+      //  public virtual DbSet<RolePermission> RolePermission { get; set; }
+       // public virtual DbSet<Subscription> Subscription { get; set; }
+        public virtual DbSet<User> User { get; set; }
 
-        public virtual DbSet<Guide> Guide { get; set; }
-        public virtual DbSet<GuideCate> GuideCate { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
-
-            modelBuilder.Entity<Guide>(entity =>
+            modelBuilder.Entity<User>(entity =>
             {
-                entity.Property(e => e.Description).IsRequired();
+                entity.HasIndex(e => new { e.SubsidiaryId, e.UserName }, "IX_User_UserName")
+                    .IsUnique()
+                    .HasFilter("([IsDeleted]=(0) AND [UserName]<>'' AND [UserName] IS NOT NULL)");
 
-                entity.Property(e => e.GuideCode)
+                entity.Property(e => e.UserId).ValueGeneratedNever();
+
+                entity.Property(e => e.AccessFailedCount).HasComment("");
+
+                entity.Property(e => e.PasswordHash)
                     .IsRequired()
-                    .HasMaxLength(128)
-                    .HasComment("");
+                    .HasMaxLength(128);
 
-                entity.Property(e => e.Title)
+                entity.Property(e => e.PasswordSalt)
                     .IsRequired()
-                    .HasMaxLength(255);
-            });
+                    .HasMaxLength(128);
 
-            modelBuilder.Entity<GuideCate>(entity =>
-            {
-                entity.Property(e => e.Description).HasMaxLength(512);
+                entity.Property(e => e.UpdatedDatetimeUtc).HasDefaultValueSql("(getutcdate())");
 
-                entity.Property(e => e.Title).HasMaxLength(512);
+                entity.Property(e => e.UserName)
+                    .IsRequired()
+                    .HasMaxLength(64);
             });
 
             OnModelCreatingPartial(modelBuilder);

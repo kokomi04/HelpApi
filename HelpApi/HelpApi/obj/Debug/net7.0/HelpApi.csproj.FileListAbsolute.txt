@@ -72,3 +72,6 @@ E:\Project\help-api\HelpApi\HelpApi\obj\Debug\net7.0\refint\HelpApi.dll
 E:\Project\help-api\HelpApi\HelpApi\obj\Debug\net7.0\HelpApi.pdb
 E:\Project\help-api\HelpApi\HelpApi\obj\Debug\net7.0\HelpApi.genruntimeconfig.cache
 E:\Project\help-api\HelpApi\HelpApi\obj\Debug\net7.0\ref\HelpApi.dll
+E:\Project\help-api\HelpApi\HelpApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.AzureAD.UI.dll
+E:\Project\help-api\HelpApi\HelpApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Project\help-api\HelpApi\HelpApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
