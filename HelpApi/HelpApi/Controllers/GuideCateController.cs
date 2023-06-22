@@ -1,6 +1,6 @@
-﻿using HelpApi.Controllers.BaseController;
-using HelpApi.Models;
-using HelpApi.Services;
+﻿using Applications.Models;
+using Applications.Services;
+using HelpApi.Controllers.BaseController;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;

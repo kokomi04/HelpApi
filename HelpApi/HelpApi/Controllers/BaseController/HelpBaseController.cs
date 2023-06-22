@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace HelpApi.Controllers.BaseController
 {
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
+   // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class HelpBaseController : ControllerBase
     {
         private int _userId = 0;

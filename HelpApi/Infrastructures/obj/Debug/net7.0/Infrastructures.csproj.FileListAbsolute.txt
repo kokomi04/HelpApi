@@ -1,0 +1,13 @@
+E:\Project\help-api\HelpApi\Infrastructures\bin\Debug\net7.0\Infrastructures.deps.json
+E:\Project\help-api\HelpApi\Infrastructures\bin\Debug\net7.0\Infrastructures.dll
+E:\Project\help-api\HelpApi\Infrastructures\bin\Debug\net7.0\Infrastructures.pdb
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\Infrastructures.csproj.AssemblyReference.cache
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\Infrastructures.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\Infrastructures.AssemblyInfoInputs.cache
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\Infrastructures.AssemblyInfo.cs
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\Infrastructures.csproj.CoreCompileInputs.cache
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\Infrastructures.dll
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\refint\Infrastructures.dll
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\Infrastructures.pdb
+E:\Project\help-api\HelpApi\Infrastructures\obj\Debug\net7.0\ref\Infrastructures.dll
+E:\Project\help-api\HelpApi\Infrastructures\bin\Debug\net7.0\AppConfigs\AppConfigSetting.cs

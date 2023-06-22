@@ -1,6 +1,6 @@
-﻿using HelpApi.Controllers.BaseController;
-using HelpApi.Models;
-using HelpApi.Services;
+﻿using Applications.Models;
+using Applications.Services;
+using HelpApi.Controllers.BaseController;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
