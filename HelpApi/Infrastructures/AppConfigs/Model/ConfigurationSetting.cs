@@ -1,4 +1,4 @@
-﻿namespace Infrastructures.Commons.AppConfigs.Model
+﻿namespace Infrastructures.AppConfigs.Model
 {
     public class ConfigurationSetting
     {

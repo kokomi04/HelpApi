@@ -1,4 +1,4 @@
-﻿using Infrastructures.Commons;
+﻿using Infrastructures;
 using Infrastructures.EF.HelpDB;
 
 namespace Applications.Models

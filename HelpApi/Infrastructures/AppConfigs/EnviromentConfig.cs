@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infrastructures.Commons.AppConfigs
+namespace Infrastructures.AppConfigs
 {
     public static class EnviromentConfig
     {

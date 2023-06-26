@@ -1,6 +1,8 @@
 ﻿using Applications.Models;
 using Applications.Services;
 using HelpApi.Controllers.BaseController;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,6 +33,7 @@ namespace HelpApi.Controllers
 
         [HttpPost]
         [Route("")]
+        [Authorize(AuthenticationSchemes = "introspection")]
         public async Task<int> Create([FromBody] GuideModel model)
         {
             return await _guideService.Create(model);
@@ -38,6 +41,7 @@ namespace HelpApi.Controllers
 
         [HttpPut]
         [Route("{guideId}")]
+        [Authorize(AuthenticationSchemes = "introspection")]
         public async Task<bool> Update([FromRoute] int guideId, GuideModel model)
         {
             return await _guideService.Update(guideId, model);
@@ -45,6 +49,7 @@ namespace HelpApi.Controllers
 
         [HttpDelete]
         [Route("{guideId}")]
+        [Authorize(AuthenticationSchemes = "introspection")]
         public async Task<bool> Deleted([FromRoute] int guideId)
         {
             return await _guideService.Deleted(guideId);

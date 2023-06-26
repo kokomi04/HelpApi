@@ -1,11 +1,13 @@
 ﻿using Applications.Models;
 using Applications.Services;
 using HelpApi.Controllers.BaseController;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace VErpApi.Controllers.System
+namespace HelpApi.Controllers
 {
     [Route("api/guideCate")]
     public class GuideCateController : HelpBaseController
@@ -34,6 +36,7 @@ namespace VErpApi.Controllers.System
 
         [HttpPost]
         [Route("")]
+        [Authorize(AuthenticationSchemes = "introspection")]
         public async Task<int> Create([FromBody] GuideCateModel model)
         {
             return await _guideCateService.Create(model);
@@ -41,6 +44,7 @@ namespace VErpApi.Controllers.System
 
         [HttpPut]
         [Route("{guideCateId}")]
+        [Authorize(AuthenticationSchemes = "introspection")]
         public async Task<bool> Update([FromRoute] int guideCateId, GuideCateModel model)
         {
             return await _guideCateService.Update(guideCateId, model);
@@ -48,6 +52,7 @@ namespace VErpApi.Controllers.System
 
         [HttpDelete]
         [Route("{guideCateId}")]
+        [Authorize(AuthenticationSchemes = "introspection")]
         public async Task<bool> Delete([FromRoute] int guideCateId)
         {
             return await _guideCateService.Delete(guideCateId);

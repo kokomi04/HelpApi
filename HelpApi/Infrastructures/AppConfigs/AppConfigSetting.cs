@@ -1,9 +1,9 @@
-﻿using Infrastructures.Commons.AppConfigs.Model;
+﻿using Infrastructures.AppConfigs.Model;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 using System.Reflection;
 
-namespace Infrastructures.Commons.AppConfigs
+namespace Infrastructures.AppConfigs
 {
     public class AppConfigSetting
     {

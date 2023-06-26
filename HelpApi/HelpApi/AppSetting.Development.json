@@ -39,11 +39,16 @@
     "Product": 0,
     "ExecutablePath": ""
   },
-  "WebPush":
-  {
-    "PublicKey":"BPeuXekjhA4_UKDbK7zS00vgyuBxNOq_xqDC4wndYM4jxmzbVSoSoH6mWW1kYluYEm71ZijTy2T152ZWoNvHg-Y",
-    "PrivateKey":"ZotXJXg1N0QZ-EhStuKo8gLYNTrvpYChsDq5ZoHYTsI",
+  "WebPush": {
+    "PublicKey": "BPeuXekjhA4_UKDbK7zS00vgyuBxNOq_xqDC4wndYM4jxmzbVSoSoH6mWW1kYluYEm71ZijTy2T152ZWoNvHg-Y",
+    "PrivateKey": "ZotXJXg1N0QZ-EhStuKo8gLYNTrvpYChsDq5ZoHYTsI",
     "ActionUrl": "https://test-app.verp.vn/",
     "EnableWorker": false
+  },
+  "ExternalHelpApiKey": "9mR0A69RaqM1XAmvBrWiu2awn2V80Qbu",
+  "Authentication": {
+    "ValidAudience": "myHelpApi",
+    "ValidIssuer": "myHelpApi",
+    "SecretKey": "c29tZV9kZWZhdWx0X2tleV9mb3JfZGV2cw"
   }
 }

@@ -2,7 +2,7 @@
 using Applications.Models;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Infrastructures.Commons;
+using Infrastructures;
 using Infrastructures.EF.HelpDB;
 using Microsoft.EntityFrameworkCore;
 
@@ -60,7 +60,7 @@ namespace Applications.Services
                 .ProjectTo<GuideModel>(_mapper.ConfigurationProvider)
                 .ToListAsync();
         }
-
+        
         public async Task<GuideModel> GetGuideById(int guideId)
         {
             return await _helpDBContext.Guide.AsNoTracking()

@@ -1,5 +1,5 @@
 ﻿using HelpApi;
-using Infrastructures.Commons.AppConfigs;
+using Infrastructures.AppConfigs;
 
 var builder = WebApplication.CreateBuilder(args);
 var appSetting = AppConfigSetting.Config();
